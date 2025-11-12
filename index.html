@@ -13,14 +13,14 @@
         body {
             font-family: 'Inter', sans-serif; /* Inspired by code.html */
             line-height: 1.6;
-            background-color: #f6f7f8; /* Light background, inspired by code.html */
-            color: #212529; /* Dark text */
+            background-color: #0d1117; /* GitHub Dark Background */
+            color: #c9d1d9; /* GitHub Dark Text */
         }
         h1, h2, h3, h4, h5, h6 {
-            color: #136dec; /* Primary color, inspired by code.html */
+            color: #58a6ff; /* GitHub Blue Accent */
         }
         .section-heading {
-            border-bottom: 1px solid #e0e0e0; /* Light border, inspired by code.html */
+            border-bottom: 1px solid #30363d; /* GitHub Dark Border */
             padding-bottom: 0.75rem;
             padding-top: 1.25rem;
             margin-bottom: 1.5rem;
@@ -30,7 +30,7 @@
             height: 150px;
             object-fit: cover;
             border-radius: 50%;
-            border: 4px solid #136dec; /* Primary color border */
+            border: 4px solid #58a6ff; /* GitHub Blue Accent Border */
         }
         .experience-timeline {
             position: relative;
@@ -43,7 +43,7 @@
             top: 0;
             height: 100%;
             width: 2px;
-            background-color: #e0e0e0;
+            background-color: #30363d; /* GitHub Dark Border */
         }
         .timeline-item {
             position: relative;
@@ -57,31 +57,72 @@
             width: 1rem;
             height: 1rem;
             border-radius: 50%;
-            background-color: #136dec;
-            border: 4px solid #f6f7f8; /* Match body background */
+            background-color: #58a6ff; /* GitHub Blue Accent */
+            border: 4px solid #0d1117; /* Match body background */
             z-index: 1;
         }
         .skill-badge {
-            background-color: #e9ecef; /* Light gray background */
-            color: #212529; /* Dark text */
+            background-color: #161b22; /* GitHub Secondary Background */
+            color: #c9d1d9; /* GitHub Dark Text */
             padding: 0.5rem 1rem;
             border-radius: 0.5rem;
             font-weight: 500;
             margin-right: 0.5rem;
             margin-bottom: 0.5rem;
             display: inline-block;
+            border: 1px solid #30363d;
+        }
+        .card {
+            background-color: #161b22; /* GitHub Secondary Background */
+            border-color: #30363d; /* GitHub Dark Border */
         }
         .card-title {
             font-weight: bold;
+            color: #58a6ff !important; /* GitHub Blue Accent */
+        }
+        .text-muted {
+            color: #8b949e !important; /* GitHub Muted Text */
+        }
+        .btn-primary {
+            background-color: #58a6ff;
+            border-color: #58a6ff;
+        }
+        .btn-primary:hover {
+            background-color: #4078c0; /* Slightly darker blue on hover */
+            border-color: #4078c0;
+        }
+        .btn-outline-secondary {
+            color: #c9d1d9;
+            border-color: #30363d;
+        }
+        .btn-outline-secondary:hover {
+            background-color: #161b22;
+            border-color: #58a6ff;
+            color: #58a6ff;
+        }
+        .text-primary {
+            color: #58a6ff !important;
+        }
+        .text-success {
+            color: #3fb950 !important; /* GitHub Green */
+        }
+        .border-primary {
+            border-color: #58a6ff !important;
+        }
+        hr {
+            border-top: 1px solid #30363d;
+        }
+        .border-top {
+            border-top: 1px solid #30363d !important;
         }
     </style>
 </head>
 <body>
     <div class="container my-5">
         <!-- Header/Hero Section -->
-        <header class="text-center py-5 mb-5 bg-white rounded shadow-sm">
-            <img src="https://via.placeholder.com/150/136dec/FFFFFF?text=CC" class="profile-img mb-4" alt="Christian Claudio Profile Picture">
-            <h1 class="display-4 fw-bold">Christian Claudio</h1>
+        <header class="text-center py-5 mb-5 bg-dark rounded shadow-sm">
+            <img src="https://via.placeholder.com/150/58a6ff/0d1117?text=CC" class="profile-img mb-4" alt="Christian Claudio Profile Picture">
+            <h1 class="display-4 fw-bold text-white">Christian Claudio</h1>
             <p class="lead text-muted"><strong>Cloud, Data, & Solutions Engineer</strong></p>
             <p class="text-muted">Specializing in building scalable data solutions with AWS, Snowflake, and AI-driven tools. Let's build the future of data, together.</p>
             <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
@@ -97,13 +138,13 @@
         <hr class="my-5">
 
         <!-- About Me Section -->
-        <section class="section my-5 p-4 bg-white rounded shadow-sm">
+        <section class="section my-5 p-4 bg-dark rounded shadow-sm">
             <h2 class="section-heading h4 fw-bold mb-4">About Me</h2>
             <p class="text-muted fs-5">A technical solutions leader with over 10 years of experience designing and implementing complex data architectures to solve critical business problems. Proven ability to act as a strategic partner to business stakeholders, translating their needs into robust, scalable solutions using modern cloud technologies like AWS and Snowflake. Passionate about bridging the gap between technical capabilities and business value, with a track record of leading projects from discovery and design through to successful implementation.</p>
         </section>
 
         <!-- Professional Experience Section -->
-        <section class="section my-5 p-4 bg-white rounded shadow-sm">
+        <section class="section my-5 p-4 bg-dark rounded shadow-sm">
             <h2 class="section-heading h4 fw-bold mb-4">Professional Experience</h2>
             <div class="experience-timeline">
                 <!-- Trulieve -->
@@ -148,7 +189,7 @@
         </section>
 
         <!-- Core Competencies (Skills) Section -->
-        <section class="section my-5 p-4 bg-white rounded shadow-sm">
+        <section class="section my-5 p-4 bg-dark rounded shadow-sm">
             <h2 class="section-heading h4 fw-bold mb-4">Core Competencies</h2>
             <div class="d-flex flex-wrap gap-2">
                 <span class="skill-badge">AWS (Lambda, Glue, S3)</span>
@@ -172,7 +213,7 @@
         </section>
 
         <!-- Project Showcase: Generalized Solution Templates -->
-        <section class="section project-details my-5 p-4 bg-white rounded shadow-sm">
+        <section class="section project-details my-5 p-4 bg-dark rounded shadow-sm">
             <h2 class="section-heading h4 fw-bold mb-4 text-center">Project Showcase: Generalized Solution Templates</h2>
             <p class="lead text-center mb-5 text-muted">These templates represent common architectural patterns and solutions developed, showcasing expertise in Cloud, Data Engineering, and AI/Automation. Each is inspired by real-world projects, generalized to highlight core concepts and technologies without proprietary details.</p>
 
@@ -181,7 +222,7 @@
                 <div class="col">
                     <div class="card h-100 shadow-sm border-primary">
                         <div class="card-body">
-                            <h5 class="card-title text-primary">API-Driven Data Ingestion Pipeline (Snowflake-Native)</h5>
+                            <h5 class="card-title">API-Driven Data Ingestion Pipeline (Snowflake-Native)</h5>
                             <p class="card-text text-muted small">A reusable template for securely ingesting data from external REST APIs into Snowflake, transforming raw JSON into structured layers for analytics.</p>
                             <h6>Key Technologies:</h6>
                             <ul class="list-unstyled small text-muted">
@@ -204,7 +245,7 @@
                 <div class="col">
                     <div class="card h-100 shadow-sm border-primary">
                         <div class="card-body">
-                            <h5 class="card-title text-primary">Cloud Storage (S3) to Snowflake ELT Pipeline</h5>
+                            <h5 class="card-title">Cloud Storage (S3) to Snowflake ELT Pipeline</h5>
                             <p class="card-text text-muted small">An efficient and robust template for loading data from cloud object storage (e.g., AWS S3) into Snowflake, handling incremental loads and ensuring data quality.</p>
                             <h6>Key Technologies:</h6>
                             <ul class="list-unstyled small text-muted">
@@ -227,7 +268,7 @@
                 <div class="col">
                     <div class="card h-100 shadow-sm border-primary">
                         <div class="card-body">
-                            <h5 class="card-title text-primary">Legacy System Modernization & Data Aggregation</h5>
+                            <h5 class="card-title">Legacy System Modernization & Data Aggregation</h5>
                             <p class="card-text text-muted small">A template demonstrating the migration of complex legacy data logic to Snowflake, leveraging Dynamic Tables for near-real-time aggregations and ensuring data parity.</p>
                             <h6>Key Technologies:</h6>
                             <ul class="list-unstyled small text-muted">
@@ -250,7 +291,7 @@
                 <div class="col">
                     <div class="card h-100 shadow-sm border-primary">
                         <div class="card-body">
-                            <h5 class="card-title text-primary">Snowflake Data Governance & Operations</h5>
+                            <h5 class="card-title">Snowflake Data Governance & Operations</h5>
                             <p class="card-text text-muted small">Templates for essential data governance and operational aspects within Snowflake, including Change Data Capture (CDC), automated backups, and proactive alerting.</p>
                             <h6>Key Technologies:</h6>
                             <ul class="list-unstyled small text-muted">
@@ -272,7 +313,7 @@
                 <div class="col">
                     <div class="card h-100 shadow-sm border-primary">
                         <div class="card-body">
-                            <h5 class="card-title text-primary">AI/ML Integration with Snowflake (Semantic Layer)</h5>
+                            <h5 class="card-title">AI/ML Integration with Snowflake (Semantic Layer)</h5>
                             <p class="card-text text-muted small">A template showcasing the integration of AI/ML capabilities, specifically a semantic layer for Text-to-SQL, within Snowflake's data platform.</p>
                             <h6>Key Technologies:</h6>
                             <ul class="list-unstyled small text-muted">
@@ -294,7 +335,7 @@
         </section>
 
         <!-- Contact Section -->
-        <section class="section my-5 p-4 bg-white rounded shadow-sm text-center" id="contact">
+        <section class="section my-5 p-4 bg-dark rounded shadow-sm text-center" id="contact">
             <h2 class="section-heading h4 fw-bold mb-4">Get In Touch</h2>
             <p class="lead text-muted mx-auto mb-4" style="max-width: 600px;">I'm always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team. Feel free to reach out.</p>
             <a class="btn btn-primary btn-lg px-4 d-inline-flex align-items-center" href="mailto:CHRISTIANCLAUDIO@MAIL.COM">
