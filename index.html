@@ -62,17 +62,122 @@
         </section>
 
         <section class="section project-details my-4 p-4 bg-white rounded shadow-sm">
-            <h2 class="mb-3">Project Showcase</h2>
-            <p>This section will highlight key projects and generalized solutions demonstrating expertise in Cloud, Data, and AI/Automation. We will discuss specific examples from the <code>unlimited-void</code> monorepo, such as <code>wfs</code>, <code>surfside</code>, and <code>weedmaps</code>, to showcase practical applications of AWS, Snowflake, and advanced data engineering techniques.</p>
-            <p>Stay tuned for detailed examples and architectural insights!</p>
+            <h2 class="mb-4 text-center">Project Showcase: Generalized Solution Templates</h2>
+            <p class="lead text-center mb-5">These templates represent common architectural patterns and solutions developed, showcasing expertise in Cloud, Data Engineering, and AI/Automation. Each is inspired by real-world projects, generalized to highlight core concepts and technologies without proprietary details.</p>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Template 1: API-Driven Data Ingestion Pipeline -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-primary">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">API-Driven Data Ingestion Pipeline (Snowflake-Native)</h5>
+                            <p class="card-text">A reusable template for securely ingesting data from external REST APIs into Snowflake, transforming raw JSON into structured layers for analytics.</p>
+                            <h6>Key Technologies:</h6>
+                            <ul class="list-unstyled small">
+                                <li>Snowflake (Python Stored Procedures, Dynamic Tables, Network Rules, External Access Integration, Secrets, Tasks)</li>
+                                <li>Python, REST APIs, OAuth2 (conceptual)</li>
+                            </ul>
+                            <h6>Highlights:</h6>
+                            <ul class="list-unstyled small">
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Secure API Integration & Credential Handling</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Advanced Snowflake Features (Python SP, Dynamic Tables)</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> ELT & Automation for API Data</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Scalable & Extensible Design</li>
+                            </ul>
+                            <p class="card-text mt-3 text-muted small"><em>Inspired by projects like `snowflake-wfs`, `snowflake-dutchiepos-ingestion`, `snowflake-litmos-pipeline`, `snowflake-zendesk`.</em></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Template 2: Cloud Storage (S3) to Snowflake ELT Pipeline -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-primary">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Cloud Storage (S3) to Snowflake ELT Pipeline</h5>
+                            <p class="card-text">An efficient and robust template for loading data from cloud object storage (e.g., AWS S3) into Snowflake, handling incremental loads and ensuring data quality.</p>
+                            <h6>Key Technologies:</h6>
+                            <ul class="list-unstyled small">
+                                <li>Snowflake (External Stages, File Formats, MERGE, QUALIFY, Tasks, Views)</li>
+                                <li>AWS S3, SQL</li>
+                            </ul>
+                            <h6>Highlights:</h6>
+                            <ul class="list-unstyled small">
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Efficient & Scalable Data Loading from Cloud Storage</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Advanced SQL for Incremental Loads & De-duplication</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Snowflake-Native Orchestration</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Modular & Maintainable Codebase</li>
+                            </ul>
+                            <p class="card-text mt-3 text-muted small"><em>Inspired by projects like `snowflake-surfside-load`, `snowflake-weedmaps`.</em></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Template 3: Legacy System Modernization & Data Aggregation -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-primary">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Legacy System Modernization & Data Aggregation</h5>
+                            <p class="card-text">A template demonstrating the migration of complex legacy data logic to Snowflake, leveraging Dynamic Tables for near-real-time aggregations and ensuring data parity.</p>
+                            <h6>Key Technologies:</h6>
+                            <ul class="list-unstyled small">
+                                <li>Snowflake (Dynamic Tables, Complex SQL/CTEs, Views)</li>
+                                <li>Legacy Data Platforms (e.g., SAP HANA - conceptual)</li>
+                            </ul>
+                            <h6>Highlights:</h6>
+                            <ul class="list-unstyled small">
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Migration of Complex Legacy Logic to Cloud DW</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Near-Real-Time Data Aggregations with Dynamic Tables</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Meticulous Data Accuracy & Validation</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Performance Optimization</li>
+                            </ul>
+                            <p class="card-text mt-3 text-muted small"><em>Inspired by projects like `snowflake-cpi-15mins-agg-sales`, `snowflake-wfm-snapshots`.</em></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Template 4: Snowflake Data Governance & Operations -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-primary">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Snowflake Data Governance & Operations</h5>
+                            <p class="card-text">Templates for essential data governance and operational aspects within Snowflake, including Change Data Capture (CDC), automated backups, and proactive alerting.</p>
+                            <h6>Key Technologies:</h6>
+                            <ul class="list-unstyled small">
+                                <li>Snowflake (Streams, Tasks, MERGE, Zero-Copy Cloning, Stored Procedures, Notification Integrations, SYSTEM$SEND_EMAIL())</li>
+                            </ul>
+                            <h6>Highlights:</h6>
+                            <ul class="list-unstyled small">
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Robust Change Data Capture (CDC)</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Automated Disaster Recovery & Data Resilience</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Proactive Operational Monitoring & Alerting</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Security Best Practices (Least Privilege, Isolation)</li>
+                            </ul>
+                            <p class="card-text mt-3 text-muted small"><em>Inspired by projects like `snowflake-cdc-domo-orders`, `snowflake-clone-backup`, `snowflake-email-notifications`.</em></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Template 5: AI/ML Integration with Snowflake (Semantic Layer) -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-primary">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">AI/ML Integration with Snowflake (Semantic Layer)</h5>
+                            <p class="card-text">A template showcasing the integration of AI/ML capabilities, specifically a semantic layer for Text-to-SQL, within Snowflake's data platform.</p>
+                            <h6>Key Technologies:</h6>
+                            <ul class="list-unstyled small">
+                                <li>Snowflake (Cortex AI, Semantic Model, YAML)</li>
+                                <li>Natural Language Processing (NLP)</li>
+                            </ul>
+                            <h6>Highlights:</h6>
+                            <ul class="list-unstyled small">
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Innovative AI/ML Integration (Text-to-SQL)</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Semantic Layer Design for Business Context</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Modern Data Interaction & Accessibility</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Leveraging Snowflake Cortex AI</li>
+                            </ul>
+                            <p class="card-text mt-3 text-muted small"><em>Inspired by projects like `snowflake-trugpt`.</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-
-        <footer class="contact-info py-3 mt-5 border-top text-center">
-            <p>Connect with me on <a href="https://www.linkedin.com/in/christianjct" target="_blank" class="text-decoration-none">LinkedIn</a></p>
-        </footer>
-    </div>
-
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-</html>
